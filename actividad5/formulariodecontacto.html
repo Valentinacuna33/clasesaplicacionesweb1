@@ -11,7 +11,36 @@
         <a href="formulariodecontacto.html">Formulario de Contacto</a>
     </header>
     <main>
+        
         <h1>Contacto</h1>
+        <h2> Licenciado Martin Torres- Psicología Clínica</h2>
+        <p>
+            ¿Tenés alguna consulta o querés agendar un primer turno? 
+            Completá el siguiente formulario con tus datos personales y el motivo de tu consulta. 
+            Me pondré en contacto con vos a la brevedad para coordinar nuestra sesión.
+        </p>
+
+        <form action="" method="POST">
+            <label for="nombre">Nombre completo:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="tipo_consulta">Tipo de consulta:</label><br>
+            <select id="tipo_consulta" name="tipo_consulta" required>
+                <option value="psicoterapia_individual">Psicoterapia Individual</option>
+                <option value="terapia_online">Terapia Online</option>
+                <option value="orientacion_personal">Orientación Personal</option>
+            </select><br><br>
+
+            <label for="motivo">Motivo de consulta:</label><br>
+            <textarea id="motivo" name="motivo" rows="5" cols="40" required></textarea><br><br>
+
+            <input type="submit" value="Enviar Mensaje">
+        </form>
+
+         <h2> Lista de Serivicios</h2>
         <p>
             Puedes contactarme a través de los siguientes medios:
         </p>
