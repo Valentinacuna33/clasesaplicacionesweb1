@@ -1,0 +1,59 @@
+*{
+  box-sizing: border-box;
+}
+header,h1,h2,h3,p{
+    margin: 0px;
+}
+body{
+    background-color: rgb(206, 227, 20);
+}
+header{
+    background-color: rgb(190, 115, 17) ;/*!important*/ 
+}
+.nav{
+    justify-content: center;
+}
+.header.imagen-cabecera{
+    width: 400px;
+
+}
+.main.imagen-chica{
+    width: 300px;
+}
+.main.icono-servicios{
+    width: 300px;
+}
+.main.icono-trayectoria{
+    width: 300px;
+}
+.quien-soy{
+    color: #c35e5e;
+}
+.main.servicios{
+    margin: 20px;
+    background-color: #c68017;
+}
+
+.main.p-traductora {
+    background-color: rgb(150, 35, 35);
+}
+.footer{
+    background-color: #ea750e;
+}
+    
+/* pie principal */
+.pie-principal{
+    background-color: #e9f79b;
+}
+/* Selector de atributo
+[]
+{}
+*/
+/*
+.navegacion-principal{
+    background-color: coral;
+}
+*/
+@font-face{
+    
+}
