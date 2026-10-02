@@ -64,7 +64,6 @@ textarea {
     height: 60px;
     width: auto;
 }
-
 /* Contenido principal: Ancho máximo y centrado para que las líneas de texto no queden largas en pantallas grandes y no dificulte la lectura. */
 .contenido {
     max-width: 1100px;
