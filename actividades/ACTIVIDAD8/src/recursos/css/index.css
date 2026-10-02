@@ -1,0 +1,96 @@
+/*Organización del CSS: de lo general a lo específico. Primero las reglas de tipo (baja especificidad)
+   y después las de clase (mayor especificidad), así las clases ajustan a las de tipo sin conflictos. */
+@font-face {
+    /*Se define fuente sora para que se pueda usar en todo el sitio. Se define una sola vez y se reutiliza.*/
+    font-family: 'Sora';
+    src: url(./fuentes/Sora-Regular.ttf);
+}
+/*Se definen variables de root para usar los colores dentro de la pagina haciendo la llamada de los mismos */
+/*Variables de root para usar los colores dentro de pagina */
+:root {
+    --color-marca: #2f5d3a;        /* verde oscuro: fondo de encabezado y pie del sitio */
+    --color-texto-claro: #ffffff;  /* texto sobre el fondo  */
+    --color-texto: #222222;        /* texto general */
+}
+
+
+/* Regla de tipo */
+/* Modelo de caja ALTERNATIVO (border-box): el ancho declarado incluye padding y borde.
+   El modelo por defecto (content-box) los suma al ancho y los elementos quedan más grandes de lo calculado. */
+* {
+    box-sizing: border-box;
+}
+
+/* Se usa fuente incluida dentro de la carpeta con nombre fuentes */
+html {
+    font-family: 'Sora', sans-serif; /* sans-serif es la fuente de respaldo en caso de que no se pueda cargar Sora. */
+    font-size: 16px;
+}
+
+/* Se saca el margen por defecto del navegador */
+body {
+    margin: 0;
+    color: var(--color-texto);
+}
+
+/* Las imágenes nunca superan el ancho del contenedor. */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Cada label ocupa su propia línea y queda arriba de su campo: el formulario se lee de arriba hacia abajo y es más fácil de completar. */
+label {
+    display: block;
+    margin-top: 0.75rem;
+}
+
+/* Los campos ocupan todo el ancho disponible para que sean fáciles de tocar en el celular. */
+input,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-family: inherit; /* los campos no heredan la fuente por defecto; se fuerza */
+}
+/* Encabezado display: flex cambia el comportamiento en dos niveles. */
+.encabezado {
+    display: flex;
+    justify-content: space-between; /* logo a la izquierda, menú a la derecha */
+    align-items: center; /* centrado vertical de logo y menú */
+    padding: 1rem 2rem;
+    background-color: var(--color-marca);
+}
+.encabezado img { /*altura y ancho del logo para que no quede gigante en pantallas grandes. */
+    height: 60px;
+    width: auto;
+}
+
+/* Contenido principal: Ancho máximo y centrado para que las líneas de texto no queden largas en pantallas grandes y no dificulte la lectura. */
+.contenido {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Pie: Mismo color de fondo que el encabezado  para cerrar visualmente la página con la identidad de la marca. */
+.pie {
+    background-color: var(--color-marca);
+    color: var(--color-texto-claro);
+    text-align: center;
+    padding: 1rem;
+}
+
+/* El menú también es flex: los enlaces quedan en fila y no como lista vertical. Se quitan las viñetas y los márgenes por defecto de la lista. */
+.encabezado ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Enlaces del menú en color claro para que contrasten con el fondo verde. */
+.encabezado a {
+    color: var(--color-texto-claro);
+    text-decoration: none;
+}

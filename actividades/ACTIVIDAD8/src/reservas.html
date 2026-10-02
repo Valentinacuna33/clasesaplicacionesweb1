@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retiro Sustentable - Reservas</title>
+    <!-- Misma hoja de estilos que index.html: las dos páginas comparten el mismo layout. -->
+    <link rel="stylesheet" href="./recursos/css/index.css">
+</head>
+<body>
+    <!-- Se mantiene el mismo header de index.html. -->
+    <header class="encabezado">
+        <a href="index.html">
+            <img src="./recursos/imagenes/logo-rs.svg" alt="Retiro Sustentable - Ir al inicio">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenido">
+        <h1>Reservas</h1>
+        <!-- Cambio <h4 por <h2 los títulos no deben saltear niveles, para respetar jerarquías  . -->
+        <h2>Contactanos</h2>
+        <!-- el acttion nos especifica a donde iran los datos del formulario de reservas -->
+        <form action="#" method="post">
+
+            <!-- fieldset + legend agrupan los campos relacionados y les dan un título accesible. -->
+            <fieldset>
+                <legend>Datos de contacto</legend>
+
+                <!-- Cada label se va a vincular con su campo mediante por el id. -->
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <!-- tipo tel para que muuestre los telefonos. -->
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <!-- tipo email para que muuestre el teclado de email. -->
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Fechas de estadía</legend>
+
+                <!-- tipo date para que muuestre un calendario y muestre error en caso de formato incorrecto. -->
+                <label for="fecha-desde">Fecha desde</label>
+                <input type="date" id="fecha-desde" name="fecha_desde" required>
+
+                <label for="fecha-hasta">Fecha hasta</label>
+                <input type="date" id="fecha-hasta" name="fecha_hasta" required>
+            </fieldset>
+
+            <!-- el text area para que en caso de ser necesario se pueda escribir un comentario más largo. -->
+            <label for="comentario">Comentario</label>
+            <textarea id="comentario" name="comentario" rows="4"></textarea>
+
+            <!--summit para enviar el formulario. -->
+            <button type="submit">Enviar consulta</button>
+        </form>
+    </main>
+
+    <!-- Uso de footer para mostrar información legal y de cierre. Respetando jerarquia indicada en clases -->
+    <footer class="pie">
+        <p>&copy; 2026 Retiro Sustentable. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

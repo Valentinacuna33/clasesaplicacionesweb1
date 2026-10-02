@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retiro Sustentable - Catálogo</title>
+    <link rel="stylesheet" href="./recursos/css/index.css"> <!-- Añado la hoja de estilo que ya viene en la actividad -->
+</head>
+<body>
+    <header class="encabezado"> <!-- Uso header y no un div porque indica a los lectores de pantalla dónde está la "identidad" del sitio y la navegación principal -->
+        <a href="index.html">
+            <img src="./recursos/imagenes/logo-rs.svg" alt="Logo de Retiro Sustentable - Ir al inicio">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenido"> <!-- Uso main porque marca el contenido principal y único de la página -->
+        <h1>Catálogo de Cabañas</h1> <!-- Un solo h1 por página; los demás títulos bajan en orden de jerarquía -->
+        <p>Bienvenido a nuestro catálogo de cabañas. Explora nuestras opciones y encuentra la que mejor se adapte a tus necesidades.</p>
+
+        <section> <!-- Uso section porque agrupa las cabañas bajo un título propio -->
+            <h2>Cabañas para alquiler</h2>
+
+            <!-- Con article cada cabaña es un contenido independiente y se pueden seguir añadiendo nuevas -->
+            <article>
+                <h3>Cabaña 1</h3>
+                <img src="./recursos/imagenes/modelo1.webp" alt="Cabaña 1 con vista a la montaña">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, eveniet minima. Doloribus obcaecati dolorum mollitia nihil, officiis iusto dolore omnis?</p>
+                <p><strong>$45.000 por día</strong></p>
+                <a href="reservas.html">Reservar Cabaña 1</a>
+            </article>
+
+            <article>
+                <h3>Cabaña 2</h3>
+                <img src="./recursos/imagenes/modelo2.webp" alt="Cabaña 2 con vista a las sierras">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, eveniet minima. Doloribus obcaecati dolorum mollitia nihil, officiis iusto dolore omnis?</p>
+                <p><strong>$50.000 por día</strong></p>
+                <a href="reservas.html">Reservar Cabaña 2</a>
+            </article>
+
+            <article>
+                <h3>Cabaña 3</h3>
+                <img src="./recursos/imagenes/modelo3.webp" alt="Cabaña 3 rodeada de naturaleza">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, eveniet minima. Doloribus obcaecati dolorum mollitia nihil, officiis iusto dolore omnis?</p>
+                <p><strong>$55.000 por día</strong></p>
+                <a href="reservas.html">Reservar Cabaña 3</a>
+            </article>
+
+            <article>
+                <h3>Cabaña 4</h3>
+                <img src="./recursos/imagenes/modelo4.webp" alt="Cabaña amplia para grupo de familia">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, eveniet minima. Doloribus obcaecati dolorum mollitia nihil, officiis iusto dolore omnis?</p>
+                <p><strong>$60.000 por día</strong></p>
+                <a href="reservas.html">Reservar Cabaña 4</a>
+            </article>
+        </section>
+    </main>
+
+    <footer class="pie"> <!-- Uso footer para dejar asentado que es el pie, debajo de todo el contenido de la página -->
+        <p>&copy; 2026 Retiro Sustentable. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
