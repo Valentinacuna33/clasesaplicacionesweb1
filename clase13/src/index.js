@@ -12,7 +12,7 @@
 // + - * / %
 const numero1= 15 + 20
 const sume= numero1 + 20 // --> expresion
-//true o false
+//true o false. 
 const edad= 18
 const mayoriaDeEdad= 18
 let esMayorEdad = edad >= mayoriaDeEdad
