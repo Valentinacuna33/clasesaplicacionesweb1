@@ -18,7 +18,7 @@ console.log(string+ 'sistemas')
 let parentesco= ''
 const nom= 'Valentin'
 const nom2= 'Daniel'
-parentesco= nom+' sobrino '+nom2+' tio'
+parentesco= nom+' sobrino'+nom2+'tio'
 
 console.log(parentesco)
 
