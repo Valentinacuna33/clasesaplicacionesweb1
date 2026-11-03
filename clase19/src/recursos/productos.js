@@ -1,0 +1,2 @@
+export default productosMascostas
+export {productosMascostas,otroArreglo}
